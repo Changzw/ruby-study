@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    debase (0.2.4.1)
+      debase-ruby_core_source (>= 0.10.2)
+    debase-ruby_core_source (0.10.16)
+    rake (13.0.6)
+    rexml (3.2.5)
+    ruby-debug-ide (0.7.2)
+      rake (>= 0.8.1)
+
+PLATFORMS
+  arm64-darwin-21
+  ruby
+
+DEPENDENCIES
+  debase (= 0.2.4.1)
+  rexml
+  ruby-debug-ide (= 0.7.2)
+
+BUNDLED WITH
+   2.2.32
