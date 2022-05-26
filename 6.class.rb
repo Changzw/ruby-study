@@ -84,11 +84,22 @@ class Example
 			puts "第一个常量的值为 #{VAR1}"
 			puts "第二个常量的值为 #{VAR2}"
 	end
+
+	def instance_method 
+		puts "instance_method"     #instance method
+	end
+	def Example.class_method  #class method
+		puts "class_method"     #instance method
+	end
 end
 
 # 创建对象
 object=Example.new()
 object.show
+object.instance_method
+Example.class_method
+puts Example::VAR1
+puts Example::VAR2
 
 =begin
 Ruby 伪变量
