@@ -43,3 +43,8 @@ test2 do |*argc|
 	puts "k=#{k}"
 	puts "other=#{other}"
 end
+
+test2 { |*x|
+  puts "-------------="
+  puts x
+}
