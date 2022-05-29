@@ -76,3 +76,20 @@ class Accounts
 	def Accounts.return_date
 	end
 end
+
+
+def hello 
+	puts "hellow world"
+end
+
+# error
+# def hello {
+# 	puts "hellow world"
+# }
+
+hello
+def hello_(who="czw")
+	puts "hellow world! #{who}"
+end
+hello_("changzhognwei")
+hello_ 

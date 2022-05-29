@@ -15,6 +15,7 @@ module A
 end
 module B
 	def b1
+		puts "dafadsfff"
 	end
 	def b2
 	end
@@ -33,3 +34,9 @@ samp.a2
 samp.b1
 samp.b2
 samp.s1
+
+class KK include B 
+
+end 
+jl = KK.new
+jk.b1

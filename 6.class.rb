@@ -9,7 +9,6 @@ Ruby 支持五种类型的变量。
 	大写字母开头：常数（Constant）。
 =end 
 
-
 =begin
 Ruby 全局变量
 全局变量以 $ 开头。未初始化的全局变量的值为 nil，在使用 -w 选项后，会产生警告。
@@ -112,3 +111,110 @@ nil: 代表 undefined 的值。
 __FILE__: 当前源文件的名称。
 __LINE__: 当前行在源文件中的编号。
 =end
+
+puts "-------------------------------"
+# 模板级的对象, 是实例变量，能够被该类或子类继承使用
+@name 
+puts @name
+class Player 
+	def initialize(name="czw") 
+		@name = name 
+	end 
+	def show()
+		puts "player: #{@name}"
+	end 
+
+end 
+
+ll = Player.new
+ll.show
+curry = Player.new("curry")
+curry.show
+harden = Player.new("harden")
+harden.show
+
+puts "-------------------------------"
+=begin
+列出对象（类）内部的方法
+instance_methods
+调查对象的方法/属性是否可用
+respond_to?
+执行对象的方法
+send
+=end
+class Game 
+	def initialize(title="三国志14", price=300) 
+		@title = title
+		@price = price
+	end
+
+	def show() 
+		puts "title: #{@title}, price: #{@price}"
+	end
+
+	def show2() 
+	end 
+
+	def show3() 
+	end 
+end 
+
+puts Game.instance_methods false 
+g0 = Game.new("jjjj", 200)
+if g0.respond_to?("show") 
+	g0.send("show")
+end
+
+puts "使用对象属性-------------------------------"
+=begin
+属性存储器, 定义可存取对象的属性，就是属性的访问权限
+attr_accessor
+=end 
+class Game2
+	attr_accessor :price
+	attr_reader :title
+	def initialize(id=0, title="三国志14", price=300) 
+		@title = title
+		@price = price
+		@id = id 
+	end
+
+	def show() 
+		puts "title: #{@title}, price: #{@price}"
+	end
+
+	def show2() 
+	end 
+
+	def show3() 
+	end 
+
+	def self.llll
+puts "dafad"
+	end 
+end 
+
+g2 = Game2.new
+puts "title is " + g2.respond_to?("title").to_s
+puts "price is " + g2.respond_to?("price").to_s
+# g2.title = 3 不行 因为是 readeri
+g2.price = 4
+puts g2.price 
+# 类方法
+Game2.llll
+Game2::llll
+
+puts "类继承-------------------------------"
+=begin
+
+=end
+
+class SteamGame < Game2
+	def SteamInfo 
+		puts "game all in one"
+	end 
+end
+puts SteamGame.instance_methods(false)
+SteamGame.llll
+s = SteamGame.new
+puts s.title
