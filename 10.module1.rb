@@ -39,4 +39,4 @@ class KK include B
 
 end 
 jl = KK.new
-jk.b1
+lll = 1
