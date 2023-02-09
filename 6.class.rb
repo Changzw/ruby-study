@@ -57,8 +57,13 @@ class Customer
     @@no_of_customers += 1
     puts "Total number of customers: #{@@no_of_customers}"
   end
+
+  def self.hahah 
+    puts "类方法#{__method__}"
+  end
 end
 
+Customer.hahah
 # 创建对象
 cust1 = Customer.new('1', 'John', 'Wisdom Apartments, Ludhiya')
 cust2 = Customer.new('2', 'Poul', 'New Empire road, Khandala')

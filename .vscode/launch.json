@@ -15,7 +15,7 @@
 			"program": "${file}",
 			"args": [],
 			"env": {
-				"PATH": "/Users/fri/.rvm/gems/ruby-2.7.2/bin:/Users/fri/.rvm/gems/ruby-2.7.2@global/bin:/Users/fri/.rvm/rubies/ruby-2.7.2/bin:/Users/fri/.rvm/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:/Users/fri/.node/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin",
+				"PATH": "/Users/fri/.rvm/gems/ruby-2.7.2/bin:/Users/fri/.rvm/gems/ruby-2.7.2@global/bin:/Users/fri/.rvm/rubies/ruby-2.7.2/bin:/Users/fri/.rvm/bin:/opt/MonkeyDev/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:/Users/fri/.node/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS",
 				"GEM_HOME": "/Users/fri/.rvm/gems/ruby-2.7.2",
 				"GEM_PATH": "/Users/fri/.rvm/gems/ruby-2.7.2:/Users/fri/.rvm/gems/ruby-2.7.2@global",
 				"RUBY_VERSION": "ruby-2.7.2"

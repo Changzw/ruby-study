@@ -22,3 +22,6 @@ player = {
 
 puts [player[:name], player[:age].to_s, player[:salary]].join(" ")
 
+numbers = { one: 1, two: 2, three: 3}
+puts numbers
+puts numbers[:one]
